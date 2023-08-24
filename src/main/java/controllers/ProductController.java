@@ -40,13 +40,7 @@ public class ProductController {
             return o1.getName().compareTo(o2.getName());
         }
     };
-    private final Comparator<Product> comparatorCategoryFromZ = new Comparator<Product>() {
-        @Override
-        public int compare(Product o1, Product o2) {
-            if (o1.getCategory() == o2.getCategory()) return 0;
-            return o1.getCategory().toString().compareTo(o2.getCategory().toString());
-        }
-    };
+
     public ProductController(){
         this.renewProductList();
     }
